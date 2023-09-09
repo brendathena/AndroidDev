@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E3636"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/greet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/almendra_bold_italic"
+        android:text="Hi, there! I am your Poeple Counter."
+        android:textColor="#A18686"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="385dp"
+        android:layout_height="81dp"
+        android:fontFamily="@font/almendra"
+        android:text="Control how many people are in your establishment by pressing the + and - buttons. \n Have a lovely shift!"
+        android:textAlignment="center"
+        android:textColor="#A18686"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greet"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/in"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#A18686"
+        android:fontFamily="@font/almendra_bold_italic"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="#3E3636"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#A18686"
+        android:fontFamily="@font/almendra_bold_italic"
+        android:text="-"
+        android:textColor="#3E3636"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="121dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/almendra_bold_italic"
+        android:text="Let's go!"
+        android:textAlignment="center"
+        android:textColor="#A18686"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/in"
+        app:layout_constraintVertical_bias="0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
